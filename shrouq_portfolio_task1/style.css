@@ -1,0 +1,292 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f6fb;
+    color: #18324d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.header {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    background-color: #194b7b;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.header h1 {
+    margin: 0 0 5px;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0;
+}
+
+.subtitle {
+    color: #d4e8fb;
+}
+
+.navigation {
+    margin: 20px 0 5px;
+}
+
+.navigation a {
+    display: inline-block;
+    margin: 5px;
+    padding: 7px 14px;
+    border: 1px solid #547ba2;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #2d5b87;
+}
+
+.navigation a:hover {
+    background-color: #3d6d9c;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e0e8f1;
+    border-radius: 15px;
+}
+
+.section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    color: #194b7b;
+    border-bottom: 1px solid #d6e5f4;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    flex: 0 0 140px;
+    object-fit: cover;
+    object-position: center 28%;
+    border: 5px solid #e3eff8;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 9px 15px;
+    background-color: #1765a5;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    background-color: #104b7c;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #dce8f5;
+    border-radius: 10px;
+    background-color: #f8fbff;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1765a5;
+}
+
+.timeline-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+    border: 1px solid #e0e8f1;
+    border-left: 4px solid #1765a5;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+.timeline-icon {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #dce8f5;
+    border-radius: 10px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h3 {
+    margin: 2px 0 8px;
+    font-size: 18px;
+}
+
+.project-type {
+    margin: 0 0 8px;
+    color: #1765a5;
+    font-weight: bold;
+}
+
+.technologies {
+    color: #1765a5;
+    font-weight: bold;
+}
+
+.project-visuals {
+    margin-top: 20px;
+}
+
+.project-visuals h3 {
+    margin-bottom: 12px;
+    color: #194b7b;
+}
+
+.visual-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.visual-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 105px;
+    margin: 0;
+    padding: 12px;
+    background-color: #f8fbff;
+    border: 1px solid #dce8f5;
+    border-radius: 10px;
+}
+
+.visual-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.contact-section {
+    background-color: #194b7b;
+    color: white;
+}
+
+.contact-section h2 {
+    color: white;
+    border-bottom-color: #547ba2;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+    padding: 9px 12px;
+    color: white;
+    background-color: #2d5b87;
+    border: 1px solid #547ba2;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    background-color: #3d6d9c;
+}
+
+.footer {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #081c33;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #9ed5ff;
+}
+
+@media screen and (max-width: 600px) {
+    .header,
+    .container,
+    .footer {
+        width: 92%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .about-content,
+    .cards {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        margin-bottom: 5px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .timeline-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .timeline-icon {
+        width: 58px;
+        height: 58px;
+        flex-basis: 58px;
+    }
+}
